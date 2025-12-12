@@ -1,28 +1,41 @@
 ## Title of the Project
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+**Feelix – Emotion-Based Coping Assistance and Wellness Support System**
+
+A digital wellness system designed to help users manage their emotions through guided coping strategies, interactive tools, and an intelligent recommendation system that enhances emotional well-being.
 
 ## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
+Feelix is an intelligent emotional wellness platform that provides users with step-by-step coping strategies, personalized guidance, and interactive tools such as breathing timers, grounding exercises, soothing music, and a psychologist-style chatbot.
+
+Traditional coping methods often require users to search manually for solutions, which can feel overwhelming during emotional distress. Feelix addresses this challenge by offering a structured, easy-to-use system that automatically guides users based on the specific emotion they select.
+
+The project integrates psychological research-backed techniques and modern AI interaction design to improve mental resilience, emotional awareness, and overall user well-being.
 
 ## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
+* Emotion-specific step-by-step coping strategies.
+* Intelligent chatbot for guided emotional check-ins.
+* Breathing exercises, grounding techniques, and calming audio tools.
+* Emotion journal for tracking triggers and reflections.
+* Adaptive UI that changes based on the user’s emotional state.
+* High scalability and modular architecture for adding more emotions over time.
+* JSON-based structured storage for coping steps and emotion metadata.
 
 ## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
+* **Operating System:** Works on 64-bit Windows, macOS, or Linux systems for smooth application execution.
+* **Development Environment:** Python 3.8+ or Node.js (depending on backend implementation).
+* **Frameworks:**
+
+  * TensorFlow / PyTorch (if emotion prediction or sentiment analysis models are used).
+  * Flask / FastAPI / Node.js for backend development.
+  * React / Next.js for frontend UI (web version).
+* **UI Tools:** Tailwind CSS, Figma for wireframing and prototyping.
+* **Database:** MongoDB / Firebase / PostgreSQL for storing user logs and emotional data.
+* **Version Control:** Git and GitHub for collaborative development and updates.
+* **IDE:** VSCode for coding, debugging, and UI development.
+* **Additional Dependencies:**
+
+  * scikit-learn for lightweight ML tasks
+  * OpenAI or other NLP APIs for chatbot behavior
+  * Audio libraries for breathing/relaxation features
 
 
 ## Output
@@ -51,8 +64,10 @@ By combining interactive tools, AI-assisted chat, and step-wise calming techniqu
 
 The system demonstrates a powerful blend of mental-health research and digital design, enabling an accessible and supportive platform for emotional wellness.
 ## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+1. American Psychological Association. *Evidence-Based Strategies for Emotional Regulation and Coping.*
+2. Gross, J.J. “Emotion Regulation: Conceptual and Practical Advances”, Annual Review of Clinical Psychology, 2023.
+3. Siegel, D. “The Mindful Brain: Reflections on Mindfulness and Neurobiology”, Norton, 2022.
+4. WHO Mental Health Gap Action Programme (mhGAP), 2024.
 
 
 
