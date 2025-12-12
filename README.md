@@ -24,32 +24,32 @@ Tailored Chatbot for Hostel Booking System is a project designed to integrate a 
 * IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
 * Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
 
-## System Architecture
-<!--Embed the system architecture diagram as shown below-->
-
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
-
 
 ## Output
 
 <!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+#### Output1 - Home page
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
+<img width="1854" height="894" alt="image" src="https://github.com/user-attachments/assets/2bcab7b4-ceec-491b-888f-92383763e83b" />
 
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+#### Output2 - Emotion list
+<img width="1879" height="883" alt="image" src="https://github.com/user-attachments/assets/1e43c3b9-bbc0-490c-99e0-3c45c95e1046" />
 
 Detection Accuracy: 96.7%
 Note: These metrics can be customized based on your actual performance evaluations.
 
 
 ## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+Feelix provides a structured, psychologically informed coping system that helps users navigate difficult emotions such as anger, anxiety, trauma, inferiority complex, OCD patterns, and more.
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+By combining interactive tools, AI-assisted chat, and step-wise calming techniques, Feelix:
 
+* Improves emotional clarity and self-regulation
+* Reduces distress through guided, actionable strategies
+* Encourages long-term emotional resilience
+* Supports users in developing healthy coping habits
+
+The system demonstrates a powerful blend of mental-health research and digital design, enabling an accessible and supportive platform for emotional wellness.
 ## Articles published / References
 1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
 2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
