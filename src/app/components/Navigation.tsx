@@ -11,7 +11,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-0">
-            <img src="Logo.jpg" className="h-32 w-20" />
+            <img src="Logo.jpg" className="h-32 w-32" />
             <span className="text-2xl font-semibold bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
               Feelix
             </span>
