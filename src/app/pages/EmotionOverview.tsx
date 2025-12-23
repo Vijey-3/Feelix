@@ -132,7 +132,7 @@ export function EmotionOverview() {
                 </Button>
               </Link>
               <Link to="/tools">
-                <Button variant="outline" size="lg" className="border-white text-black hover:bg-white/20">
+                <Button variant="outline" size="lg" className="border-white text-black">
                   Explore Tools
                 </Button>
               </Link>
