@@ -61,14 +61,6 @@ export function ToolsPage() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="chatbot">
-          <Card className="bg-white/80 dark:bg-gray-800/80 backdrop-blur border-none shadow-lg">
-            <CardContent className="p-8">
-              <Chatbot />
-            </CardContent>
-          </Card>
-        </TabsContent>
-
         <TabsContent value="mood">
           <Card className="bg-white/80 dark:bg-gray-800/80 backdrop-blur border-none shadow-lg">
             <CardContent className="p-8">
