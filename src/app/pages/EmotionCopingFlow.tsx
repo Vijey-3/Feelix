@@ -11,6 +11,19 @@ import { PhysicalGrounding } from '../components/PhysicalGrounding';
 import { JournalingPrompt } from '../components/JournalingPrompt';
 import { UrgeSurfing } from '../components/UrgeSurfing';
 import { ReplacementAction } from '../components/ReplacementAction';
+import { TaskChunking } from '../components/TaskChunking';
+import { TwoMinuteRule } from '../components/TwoMinuteRule';
+import { VisualProgress } from '../components/VisualProgress';
+import { GradualExposure } from '../components/GradualExposure';
+import { SocialScripts } from '../components/SocialScripts';
+import { PostureBreathing } from '../components/PostureBreathing';
+import { SelfCompassion } from '../components/SelfCompassion';
+import { ThoughtRealityCheck } from '../components/ThoughtRealityCheck';
+import { EmotionLabeling } from '../components/EmotionLabeling';
+import { ResponseDelay } from '../components/ResponseDelay';
+import { ReframingPractice } from '../components/ReframingPractice';
+import { TriggerIdentification } from '../components/TriggerIdentification';
+import { SubstitutionHabits } from '../components/SubstitutionHabits';
 
 export function EmotionCopingFlow() {
   const { emotionId } = useParams();
@@ -177,6 +190,226 @@ export function EmotionCopingFlow() {
                 </p>
                 <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                   Each time you resist, you're rewiring your brain. Let's learn more about managing cravings.
+                </p>
+              </div>
+            ),
+          },
+        ];
+
+      case 'procrastination':
+        return [
+          {
+            title: 'Acknowledgement',
+            component: (
+              <div className="text-center space-y-6">
+                <div className={`w-24 h-24 mx-auto rounded-full bg-gradient-to-br ${emotion.color} flex items-center justify-center text-6xl shadow-xl`}>
+                  {emotion.icon}
+                </div>
+                <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-100">
+                  You're stuck in procrastination
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Procrastination isn't laziness - it's often fear, overwhelm, or perfectionism in disguise.
+                </p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Let's break through the resistance together with practical strategies.
+                </p>
+              </div>
+            ),
+          },
+          {
+            title: 'Task Chunking',
+            component: <TaskChunking />,
+          },
+          {
+            title: '2-Minute Rule',
+            component: <TwoMinuteRule />,
+          },
+          {
+            title: 'Visual Progress',
+            component: <VisualProgress />,
+          },
+          {
+            title: 'Complete',
+            component: (
+              <div className="text-center space-y-6">
+                <Heart className="w-24 h-24 mx-auto text-pink-500" />
+                <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-100">
+                  You're Ready to Start!
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  You've learned practical strategies to overcome procrastination. Remember: starting is the hardest part.
+                </p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Use these techniques whenever you feel stuck. Let's explore more ways to build momentum.
+                </p>
+              </div>
+            ),
+          },
+        ];
+
+      case 'shyness':
+        return [
+          {
+            title: 'Acknowledgement',
+            component: (
+              <div className="text-center space-y-6">
+                <div className={`w-24 h-24 mx-auto rounded-full bg-gradient-to-br ${emotion.color} flex items-center justify-center text-6xl shadow-xl`}>
+                  {emotion.icon}
+                </div>
+                <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-100">
+                  Feeling shy is completely normal
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Shyness is your mind trying to protect you, but it doesn't have to control your social life.
+                </p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Let's build your confidence step by step with gentle, proven techniques.
+                </p>
+              </div>
+            ),
+          },
+          {
+            title: 'Gradual Exposure',
+            component: <GradualExposure />,
+          },
+          {
+            title: 'Social Scripts',
+            component: <SocialScripts />,
+          },
+          {
+            title: 'Posture & Breathing',
+            component: <PostureBreathing emotion={emotion} />,
+          },
+          {
+            title: 'Self-Compassion',
+            component: <SelfCompassion />,
+          },
+          {
+            title: 'Complete',
+            component: (
+              <div className="text-center space-y-6">
+                <Heart className="w-24 h-24 mx-auto text-pink-500" />
+                <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-100">
+                  You're Building Confidence!
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  You've learned practical tools to navigate social situations with more ease and confidence.
+                </p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Remember: small steps lead to big changes. Let's discover more strategies for social comfort.
+                </p>
+              </div>
+            ),
+          },
+        ];
+
+      case 'rejection':
+        return [
+          {
+            title: 'Acknowledgement',
+            component: (
+              <div className="text-center space-y-6">
+                <div className={`w-24 h-24 mx-auto rounded-full bg-gradient-to-br ${emotion.color} flex items-center justify-center text-6xl shadow-xl`}>
+                  {emotion.icon}
+                </div>
+                <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-100">
+                  You're feeling rejected or criticized
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Rejection sensitivity makes small moments feel overwhelming, but you can learn to see them clearly.
+                </p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Let's separate facts from fears and find a balanced perspective.
+                </p>
+              </div>
+            ),
+          },
+          {
+            title: 'Reality Check',
+            component: <ThoughtRealityCheck />,
+          },
+          {
+            title: 'Emotion Labeling',
+            component: <EmotionLabeling />,
+          },
+          {
+            title: 'Response Delay',
+            component: <ResponseDelay />,
+          },
+          {
+            title: 'Reframing',
+            component: <ReframingPractice />,
+          },
+          {
+            title: 'Complete',
+            component: (
+              <div className="text-center space-y-6">
+                <Heart className="w-24 h-24 mx-auto text-pink-500" />
+                <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-100">
+                  You've Gained Perspective!
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  You've practiced seeing situations more clearly and responding with balance instead of reaction.
+                </p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  These skills help you navigate relationships with more security. Let's explore more strategies.
+                </p>
+              </div>
+            ),
+          },
+        ];
+
+      case 'alcohol':
+        return [
+          {
+            title: 'Acknowledgement',
+            component: (
+              <div className="text-center space-y-6">
+                <div className={`w-24 h-24 mx-auto rounded-full bg-gradient-to-br ${emotion.color} flex items-center justify-center text-6xl shadow-xl`}>
+                  {emotion.icon}
+                </div>
+                <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-100">
+                  You're facing an alcohol craving
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Recognizing the pattern is the first step toward change. You have the strength to make different choices.
+                </p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Let's work through this craving together with evidence-based techniques.
+                </p>
+              </div>
+            ),
+          },
+          {
+            title: 'Trigger Identification',
+            component: <TriggerIdentification />,
+          },
+          {
+            title: 'Urge Surfing',
+            component: <UrgeSurfing emotion="alcohol" />,
+          },
+          {
+            title: 'Breathing Exercise',
+            component: <BreathingExercise emotion={emotion} />,
+          },
+          {
+            title: 'Substitution Habits',
+            component: <SubstitutionHabits />,
+          },
+          {
+            title: 'Complete',
+            component: (
+              <div className="text-center space-y-6">
+                <Heart className="w-24 h-24 mx-auto text-pink-500" />
+                <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-100">
+                  You're Taking Control!
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  You've navigated through the craving and identified healthier alternatives. That's real progress.
+                </p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  Each time you make this choice, you're building new patterns. Let's learn more about recovery.
                 </p>
               </div>
             ),

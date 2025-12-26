@@ -4,12 +4,29 @@ import { Slider } from './ui/slider';
 import { motion } from 'motion/react';
 import { CheckCircle } from 'lucide-react';
 
-export function UrgeSurfing() {
+interface UrgeSurfingProps {
+  emotion?: string;
+}
+
+export function UrgeSurfing({ emotion = 'smoking' }: UrgeSurfingProps) {
   const [step, setStep] = useState(0);
   const [cravingLevel, setCravingLevel] = useState(5);
   const [isBreathing, setIsBreathing] = useState(false);
   const [breathCount, setBreathCount] = useState(90);
   const [completed, setCompleted] = useState(false);
+
+  const emotionText = {
+    smoking: {
+      substance: 'smoking',
+      verb: 'smoke',
+    },
+    alcohol: {
+      substance: 'drinking',
+      verb: 'drink',
+    },
+  };
+
+  const text = emotionText[emotion as keyof typeof emotionText] || emotionText.smoking;
 
   useEffect(() => {
     if (!isBreathing || breathCount === 0) return;
