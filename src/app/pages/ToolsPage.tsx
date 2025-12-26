@@ -33,11 +33,6 @@ export function ToolsPage() {
             <span className="hidden sm:inline">Emotion Journal</span>
             <span className="sm:hidden">Journal</span>
           </TabsTrigger>
-          <TabsTrigger value="chatbot" className="flex items-center space-x-2">
-            <MessageCircle className="h-4 w-4" />
-            <span className="hidden sm:inline">Support Chat</span>
-            <span className="sm:hidden">Chat</span>
-          </TabsTrigger>
           <TabsTrigger value="mood" className="flex items-center space-x-2">
             <BarChart3 className="h-4 w-4" />
             <span className="hidden sm:inline">Mood Tracker</span>
