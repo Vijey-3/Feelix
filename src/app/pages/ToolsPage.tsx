@@ -23,17 +23,27 @@ export function ToolsPage() {
 
       <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
         <TabsList className="grid w-full grid-cols-1 lg:grid-cols-3 mb-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur p-2 rounded-lg">
-          <TabsTrigger value="breathing" className="flex items-center space-x-2">
+          <TabsTrigger
+            value="breathing"
+            className="
+    flex items-center space-x-2
+    px-4 py-2 rounded-md
+    transition-all
+    data-[state=active]:bg-blue-500
+    data-[state=active]:text-white
+    data-[state=active]:shadow
+  "
+          >
             <Wind className="h-4 w-4" />
-            <span className="hidden sm:inline">Breathing Timer</span>
+            <span className="hidden sm:inline">Breathing</span>
             <span className="sm:hidden">Breathe</span>
           </TabsTrigger>
-          <TabsTrigger value="journal" className="flex items-center space-x-2">
+          <TabsTrigger value="journal" className="flex items-center space-x-2 px-4 py-2 rounded-md transition-all data-[state=active]:bg-blue-500 data-[state=active]:text-white data-[state=active]:shadow">
             <BookOpen className="h-4 w-4" />
             <span className="hidden sm:inline">Emotion Journal</span>
             <span className="sm:hidden">Journal</span>
           </TabsTrigger>
-          <TabsTrigger value="mood" className="flex items-center space-x-2">
+          <TabsTrigger value="mood" className="flex items-center space-x-2 px-4 py-2 rounded-md transition-all data-[state=active]:bg-blue-500 data-[state=active]:text-white data-[state=active]:shadow">
             <BarChart3 className="h-4 w-4" />
             <span className="hidden sm:inline">Mood Tracker</span>
             <span className="sm:hidden">Tracker</span>
