@@ -29,7 +29,7 @@ export function ToolsPage() {
     flex items-center space-x-2
     px-4 py-2 rounded-md
     transition-all
-    data-[state=active]:bg-blue-500
+    data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600
     data-[state=active]:text-white
     data-[state=active]:shadow
   "
@@ -38,12 +38,12 @@ export function ToolsPage() {
             <span className="hidden sm:inline">Breathing</span>
             <span className="sm:hidden">Breathe</span>
           </TabsTrigger>
-          <TabsTrigger value="journal" className="flex items-center space-x-2 px-4 py-2 rounded-md transition-all data-[state=active]:bg-blue-500 data-[state=active]:text-white data-[state=active]:shadow">
+          <TabsTrigger value="journal" className="flex items-center space-x-2 px-4 py-2 rounded-md transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow">
             <BookOpen className="h-4 w-4" />
             <span className="hidden sm:inline">Emotion Journal</span>
             <span className="sm:hidden">Journal</span>
           </TabsTrigger>
-          <TabsTrigger value="mood" className="flex items-center space-x-2 px-4 py-2 rounded-md transition-all data-[state=active]:bg-blue-500 data-[state=active]:text-white data-[state=active]:shadow">
+          <TabsTrigger value="mood" className="flex items-center space-x-2 px-4 py-2 rounded-md transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-600 data-[state=active]:to-pink-600 data-[state=active]:text-white data-[state=active]:shadow">
             <BarChart3 className="h-4 w-4" />
             <span className="hidden sm:inline">Mood Tracker</span>
             <span className="sm:hidden">Tracker</span>
